@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <main id="app"></main>
+    
+    <script type="text/babel">
+            const domElemnt =document.getElementById('app');
+            const num1 = 18
+            const name = 'david'
+            const obj1 = {name:'dani', age:22}
+
+            
+
+            function Hello (){
+                return <div><h1>hi</h1></div>
+            }
+
+            function Button (){
+                const pop = ()=> {
+                    alert('clicked');
+                }
+                return <button onClick = {pop}>clicke me</button>
+                // return <button onClick = {()=> alert('clicked')}>push me</button>
+            }
+
+            function Secondbutton(name){
+                const popalert = ()=>{
+                    alert(name)
+                }
+            }
+
+            function Name (){
+                return <div><Hello/><h1>David</h1></div>
+            }
+
+
+            ReactDOM.render(
+                <div>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Name/>
+                 </div>,
+                 domElemnt)
+
+            //      ReactDOM.render(<div>
+            //     <h1>hello world</h1>
+            //     <img src="https://cdn.pixabay.com/photo/2021/11/12/18/13/greenfinch-6789772__340.jpg" alt=""/><br/>
+            // <video width="400" controls>
+            // <source src="https://player.vimeo.com/external/303404014.sd.mp4?s=d2be0d6f47f4bbaca869d8795afc9f67bf274aea&profile_id=165" type="video/mp4"/>
+            // <source src="" type="video/ogg"/>
+            // Your browser does not support HTML video.
+            // </video>
+            // <p> {num1+20}</p>
+            // <p>  my name is {name} </p>
+            // <p>  {obj1.name} </p>
+            //      </div>,
+            //      domElemnt)
+
+    </script>
+</body>
+</html>

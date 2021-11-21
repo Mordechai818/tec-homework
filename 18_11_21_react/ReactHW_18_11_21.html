@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+</head>
+<body>
+<main id="app"></main>
+
+
+<script type="text/babel">
+    const domElemnt = document.getElementById('app');
+    const name = 'Mordechai'
+    const name1 = 'daviid'
+
+    //  Q-2
+    const car = {
+        color: 'red',
+        type: 'sport',
+        year: '2020',
+        name: 'ford',
+        price: "40000"
+
+    }
+
+    // Q 1 4
+    function SayHello (){
+        return <h2>hello <MyName/></h2>
+    }
+
+    function SayHello1 (){
+        return <h2>hello {name}</h2>
+    }
+
+
+    // Q 3
+    function MyName(){
+        return <div>Mordechai</div>
+    };
+
+    // Q 5
+    function Header (){
+        return <div>this is header</div>
+    }
+
+    function Main (){
+        return <div>this is main</div>
+    }
+
+    function Footer(){
+        return <div>this is footer</div>
+    }
+
+    // Q 6
+    function HelloWithName(props){
+        return <div>hello {props.name}</div>
+               
+    }
+    // Q 7
+    function AgeName (props){
+        return <div>age:{props.age} name:{props.name}</div>
+    }
+
+    function ReciveLink (props){
+       return <div> <img src={props.src}/> </div>
+    }
+
+    function Recivevideo (props){
+       return <div> <video width="400" controls source src={props.source}></video></div>
+    }
+
+    ReactDOM.render(<div>
+            <SayHello/>
+            <MyName/>
+            <h1>car name: {car.name}</h1>
+            <h1>car type: {car.type}</h1>
+            <h1>car year: {car.year}</h1>
+            <h1>car color: {car.color}</h1>
+            <h1>car price: {car.price}</h1>
+            <p>{name}</p>
+            <Header/>
+            <Main/>
+            <Footer/>
+            <HelloWithName  name="avi"/>
+            <HelloWithName  name="beny"/>
+            <HelloWithName  name="gad"/>
+            <HelloWithName  name="dani"/>
+            <HelloWithName  name="haim"/>
+            <HelloWithName  name="jacob"/>
+            <HelloWithName  name="sara"/>
+            <HelloWithName  name="rachel"/>
+            <HelloWithName  name="miriam"/>
+            <HelloWithName  name="nataly"/>
+            <HelloWithName  name="gilad"/>
+            <HelloWithName  name="avrahm"/>
+            <AgeName name="r9" age="20"/>
+            <AgeName name="iverson" age="20"/>
+            <AgeName name="lebron" age="30"/>
+            <AgeName name="danken" age="26"/>
+            <AgeName name="carter" age="20"/>
+            <AgeName name="mike" age="23"/>
+            <AgeName name="malx" age="20"/>
+            <AgeName name="mlk" age="20"/>
+            <AgeName name="mj" age="20"/>
+            <AgeName name="shearer" age="9"/>
+            <AgeName name="ronaldinho" age="10"/>
+            <AgeName name="adriano" age="11"/>
+            <ReciveLink src="https://cdn.pixabay.com/photo/2014/09/24/00/14/star-of-david-458372__340.jpg"/>
+            <ReciveLink src="https://cdn.pixabay.com/photo/2012/04/26/13/12/menorah-42470__340.png"/>
+            <ReciveLink src="https://cdn.pixabay.com/photo/2015/09/13/19/19/star-of-david-938599__340.jpg"/>
+          <Recivevideo src="https://player.vimeo.com/external/361827516.sd.mp4?s=5d61abcc52aa12404afc1461999bcd00459fbb39&profile_id=164"/>
+          <Recivevideo src="https://player.vimeo.com/external/588675395.hd.mp4?s=08d12c05704d13e9edab09bf485de50ad045e996&profile_id=174"/>
+          <Recivevideo src="https://player.vimeo.com/external/591865490.sd.mp4?s=914573a4e455eb41b1d52df49bf69bf253db59ca&profile_id=164"/>
+
+        </div>,domElemnt)
+
+    
+</script>   
+</body>
+</html>
