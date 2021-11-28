@@ -1,0 +1,15 @@
+
+.card p{
+    width: 30vw;
+    background-color: red;
+    margin-top:0px;
+    border-style: dotted;
+
+}
+
+.card img {
+    width: 30vw;
+    background-color: royalblue;
+    border-style: groove;
+
+}
