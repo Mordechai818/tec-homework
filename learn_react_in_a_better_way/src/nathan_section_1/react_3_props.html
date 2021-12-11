@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+        
+    
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+
+            function PropsToComp (props){          // *(1)in the function****  props={text:}   *(2)in the component*** text="blah blah"   *(3)final result*** props{text:'blah blah'}
+               return <div>{props.text}</div>
+            }
+
+            ReactDOM.render(<div>
+                <PropsToComp text="first componenent text"/> <br/> <PropsToComp text="second compononents text"/>
+                </div>, document.getElementById('root'))
+        </script>
+    </body>
+
+</html>

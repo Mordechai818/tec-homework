@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+
+            let arr1 , arr2 ,arrayCombain , objCombain , person , salary ;
+            arr1 = [1,2,3,4];
+            arr2 = [5,6,7,8];
+
+            arrayCombain = [...arr1,...arr2]
+            console.log(arrayCombain)
+
+            // .......................................
+
+            person = {name:'David', age:22}
+            salary = {earning:20000}
+
+            objCombain = {...person , ...salary}
+            console.log(objCombain)
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+        
+    
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+            function Greeting (){
+                return <h2>hello components</h2>
+            }
+            // ReactDOM.render(<h1>HELLO REACT</h1>, document.getElementById('root'))
+            // ReactDOM.render(<div> <h5>HELLO</h5> <h1>REACT</h1> </div>, document.getElementById('root'))
+            ReactDOM.render(<div> <Greeting/> <Greeting/> <Greeting/> </div>, document.getElementById('root'))
+        </script>
+    </body>
+
+</html>

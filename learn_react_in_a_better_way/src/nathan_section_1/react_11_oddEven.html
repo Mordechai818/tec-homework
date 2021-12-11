@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+
+            let arr = [2, 3, 5, 7, 8]
+            const arrEven = arr.filter((num) => {if(num%2==0) return num})
+            console.log(arrEven)
+
+            const array2 = arr.filter((num) => num+2)  // checking the difrent between map and filter
+            const array3 = arr.map((num) => num+2)
+            console.log('origenal:', arr)
+            console.log('filter:',array2)
+            console.log('map:',array3)
+
+            const forEachArray = arr.forEach((num) => {return console.log(num+100);});  //forEach example
+
+
+
+
+
+            ReactDOM.render(<div></div>, document.getElementById('root'))
+        </script>
+    </body>
+
+</html>

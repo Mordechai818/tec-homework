@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        // we will use here 2 version of class, one with constractor and the second is without constractor (advance class)
+
+      //we did circle class with constructor and after that we
+        //put the argument in 180 and 360 in a sograim-(heb)
+    //     class Circle {
+    //     constructor(radius) {
+    //       this.radius = radius;
+    //     }
+    //   }
+
+    //   const Circle1 = new Circle(180);
+    //   const Circle2 = new Circle(360);
+    //   console.log(Circle1.radius);
+    //   console.log(Circle2.radius);
+
+
+
+        ..............................................................................................................
+                //we did circle class without!!! constructor and after that we
+        //insert the propoerties 180 and 360 with = ... and not in a sograim-(heb) like we did with the constructor
+
+
+      class CircleAdvanced {
+        width=0;
+        height=0;
+
+         print = () => {
+            console.log(this.width , this.height);
+        }
+      }
+
+      let Circle1 = new CircleAdvanced()
+      Circle1.width = 18;
+      Circle1.height = 2;
+      Circle1.print()
+
+
+    </script>
+  </body>
+</html>

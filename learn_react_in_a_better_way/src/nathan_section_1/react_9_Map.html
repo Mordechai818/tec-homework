@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+
+            const number = Math.ceil(7.6)   // basic Math
+            console.log(number);
+
+
+            const arr = [4.3, 8.1, 6.5];   
+            const arr1 = arr.map(Math.floor);
+            console.log(arr1);
+
+
+            const newArray = arr1.map((num) => num+2)
+            console.log(newArray)
+
+            const arrPlus5 = newArray.map((number) => {return number * 5})
+            console.log(arrPlus5)
+
+            const arrPlus3 = (num) => num + 3
+            console.log(arrPlus3(100));
+
+            const ArrowInMap = arr.map(arrPlus3)      //why i put arrPlus3 ???  arrPlus3 is  an arrow function so i put it on map, 
+            console.log("let see:",ArrowInMap)   // because map need an arrow function
+
+
+
+
+            ReactDOM.render(<div></div>, document.getElementById('root'))
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+
+        <script type="text/babel">
+            let arr0 = [2, 5, 1]
+            const arr1 = arr0.filter((num) => num >= 2)
+            console.log(arr1)
+
+            // let see th difrent from *map* to *Math*
+
+            const arr2 = arr0.map((num) => num >= 2)
+            console.log(arr2)
+
+
+
+            ReactDOM.render(<div></div>, document.getElementById('root'))
+        </script>
+    </body>
+
+</html>

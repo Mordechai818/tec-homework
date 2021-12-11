@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        
+        <script type="text/babel">
+    // what i did here is inherit data from class-Person to class-Student, with the *extends*
+
+            class Person {
+                name="";
+                lastN="";
+                age=0;
+            }
+
+
+            class Student extends Person{
+                grades=0;
+
+                print = ()=>{
+                    console.log(this.name,this.lastN,this.age,this.grades)
+                }
+            }
+
+            const Student1 = new Student()
+            Student1.name='Mordechai'
+            Student1.lastN='Atzvah'
+            Student1.age=27
+            Student1.grades=100
+            Student1.print()
+
+
+
+
+            ReactDOM.render(<div></div>, document.getElementById('root'))
+        </script>
+    </body>
+
+</html>
